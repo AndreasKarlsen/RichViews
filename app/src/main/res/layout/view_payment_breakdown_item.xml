@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_payment_breakdown_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/text_margin">
+
+
+    <TextView android:id="@+id/view_payment_breakdown_item_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/textAppearanceMedium" />
+
+    <TextView android:id="@+id/view_payment_breakdown_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_payment_breakdown_item_amount"
+        style="?android:attr/textAppearance" />
+
+</RelativeLayout>

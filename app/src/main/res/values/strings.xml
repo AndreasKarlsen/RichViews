@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Rich Views</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- ViewQuote-->
+    <string name="quote_total">Quote total</string>
+    <string name="checkindate">Check in date</string>
+    <string name="view_quote">ViewQuote</string>
+    <string name="payment_breakdown">Payment breakdown</string>
+
+</resources>

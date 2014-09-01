@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView android:id="@+id/view_quote_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/view_quote"
+        style="?android:attr/textAppearanceLarge" />
+
+    <ImageView android:id="@+id/view_quote_title_seperator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@android:color/holo_blue_dark"
+        android:layout_below="@id/view_quote_title"
+        tools:ignore="ContentDescription" />
+
+    <TextView android:id="@+id/view_quote_total_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quote_total"
+        android:layout_below="@id/view_quote_title_seperator"
+        android:layout_margin="@dimen/text_margin"
+        style="?android:attr/textAppearanceMedium" />
+
+    <TextView android:id="@+id/view_quote_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/view_quote_total_label"
+        android:layout_toEndOf="@id/view_quote_total_label"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_alignBaseline="@id/view_quote_total_label"
+        style="?android:attr/textAppearance" />
+
+    <TextView android:id="@+id/view_quote_checkin_date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_quote_total_label"
+        android:text="@string/checkindate"
+        android:layout_margin="@dimen/text_margin"
+        style="?android:attr/textAppearanceMedium" />
+
+    <TextView android:id="@+id/view_quote_checkin_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/view_quote_checkin_date_label"
+        android:layout_toEndOf="@id/view_quote_checkin_date_label"
+        android:layout_below="@id/view_quote_total_label"
+        android:layout_alignBaseline="@id/view_quote_checkin_date_label"
+        android:layout_margin="@dimen/text_margin"
+        style="?android:attr/textAppearance" />
+
+    <io.github.felorati.richviews.views.PaymentBreakdownView android:id="@+id/view_quote_payment_breakdown"
+        android:layout_below="@id/view_quote_checkin_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
